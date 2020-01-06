@@ -1,0 +1,285 @@
+body {
+    font-size: 15px;
+    font-family: 微軟正黑體, sans-serif;
+    background: #dcdcdc;
+}
+
+.resume {
+    max-width: 900px;
+    background: #fff;
+    margin: 0 auto;
+	padding-bottom: 40px;
+}
+.top {
+    border-top: solid 70px #ffdbd9;
+    position: relative;
+    padding:  30px;
+}
+.resume .top img{
+	width: 75px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50px);
+}
+.text {
+    text-align: center;
+    padding: 10px 50px 20px 50px;
+}
+.text h1, .text h4{
+	font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+	margin:  0;
+}
+.text h4{
+	color: #f9bbb9;
+}
+.text p{
+	text-align: left;
+    font-weight: 200;
+    line-height: 27px;
+    letter-spacing: 2.5px;
+}
+.text a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 400;
+	display: flex;
+    justify-content: flex-end;
+}
+.text a:hover{font-weight: 700;}
+.button {
+    padding: 10px 30px;
+    position: relative;
+    width: 100px;
+    background: #ffbab6;
+    color: #fff;
+}
+.button:hover{
+	background: #fff;
+    color: #000;
+}
+.button:before {
+    top: -5px;
+    left: -5px;
+    border-color: #ffdbd8 !important;
+}
+a:hover .button:before { border: solid 1px #7b7b7b!important;}
+a:hover .button:after  { border: solid 1px #ffdbd8!important;}
+.button:after {
+    top: 1px;
+    left: 1px;
+}
+.button:before, .button:after {
+    display: block;
+    border: solid 1px #7b7b7b;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    transition: border-color 200ms linear;
+}
+
+.text hr{
+	margin:  30px 0 20px 0;
+	border: solid 0.4px #ffdbd8;
+}
+.Inner-text{
+  padding: 0px 50px;
+  display: flex;
+}
+
+.Inner-text .left{
+	width: 40%;
+}
+
+.Inner-text .right{
+	width: 60%;
+}
+.left-Experience {
+    margin-top: 30px;
+}
+.left-Experience p {
+    margin: 0;
+    font-size: 9px;
+    font-weight: 100;
+}
+.left-Experience h3 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1;
+}
+.left-Experience h3::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 8px;
+    background-color: #FF7168;
+    margin-left: 10px;
+}
+ul.Experience {
+    padding: 0;
+}
+.Experience li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 8px 10px;
+    border-left: solid 3px #ccc5c5;
+}
+.Experience li p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Experience li p span{
+	display: block;
+    font-size: 14px;
+    font-weight: 100;
+    color: #a9a5a5;
+}
+/* list skill */
+.listSkill{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 30px 0 20px 0;
+}
+.listSkill li{
+  width: 20%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.circle{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 232, 231);
+  margin-bottom: 6px;
+}
+.circle::after{
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%)
+}
+.p90,.p180,.p270,.p360{
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #ffbab6;
+}
+.p180{
+  top: 50%;
+}
+.p270{
+  left: 0;
+  top: 50%;
+}
+.p360{
+  left: 0;
+  top: 0;
+}
+
+
+/* list program */
+ul.listProgram {
+   padding: 0 15px;
+}
+.listProgram .bar{
+      width: 77%;
+    height: 10px;
+    border: solid 1px #fbd7d5;
+    border-radius: 12px;
+}
+.listProgram li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.value{
+  height: 100%;
+  width: 60%;
+  background-color: #ffbab6;
+    border-radius: 10px;
+}
+.value.p10{
+  width: 10%;
+}
+  
+.value.p20{
+  width: 20%;
+}
+.value.p30{
+  width: 30%;
+}
+.value.p40{
+  width: 40%;
+}
+.value.p50{
+  width: 50%;
+}
+.value.p60{
+  width: 60%;
+}
+.value.p70{
+  width: 70%;
+}
+.value.p80{
+  width: 80%;
+}
+.value.p90{
+  width: 90%;
+}
+
+.value.p100{
+  width: 100%;
+}
+
+.btn{
+  border: solid 3px #FF7168;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+.fill{
+  background-color: #FF7168;
+}
+
+.list{
+  display: flex;
+}
+.list div{width: 50%;}
+.textＷork {
+    display: flex;
+}
+.textＷork a {
+    width: 20%;
+    box-shadow: 0px 0px 4px rgb(255, 186, 182);
+    border-radius: 3px;
+    margin: 25px 5px;
+    text-align: center;
+    color: #000;
+        text-decoration: none;
+}
+.textＷork a div h4{margin: 15px 0;}

@@ -208,7 +208,7 @@ ul.listProgram {
    padding: 0 15px;
 }
 .listProgram .bar{
-      width: 77%;
+      width: 54%;
     height: 10px;
     border: solid 1px #fbd7d5;
     border-radius: 12px;
@@ -270,8 +270,7 @@ ul.listProgram {
 .list{
   display: flex;
 }
-.list div:first-child{width: 40%;}
-.list div:last-child{width: 60%;}
+.list div{width: 50%;}
 .textＷork {
     display: flex;
 }

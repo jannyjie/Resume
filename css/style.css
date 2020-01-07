@@ -87,14 +87,15 @@ a:hover .button:after  { border: solid 1px #ffdbd8!important;}
 .Inner-text{
   padding: 0px 50px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .Inner-text .left{
-	width: 40%;
+	width: 30%;
 }
 
 .Inner-text .right{
-	width: 60%;
+	width: 70%;
 }
 .left-Experience {
     margin-top: 30px;
@@ -269,12 +270,13 @@ ul.listProgram {
 .list{
   display: flex;
 }
-.list div{width: 50%;}
+.list div:first-child{width: 40%;}
+.list div:last-child{width: 60%;}
 .textＷork {
     display: flex;
 }
 .textＷork a {
-    width: 20%;
+    width: 25%;
     box-shadow: 0px 0px 4px rgb(255, 186, 182);
     border-radius: 3px;
     margin: 25px 5px;
@@ -283,3 +285,11 @@ ul.listProgram {
         text-decoration: none;
 }
 .textＷork a div h4{margin: 15px 0;}
+@media only screen and (max-width: 425px){
+  .Inner-text {padding: 0px 20px;}
+  .text {
+    padding: 10px 20px 20px 20px;
+}
+  .Inner-text .left, .Inner-text .right{width: 100%;}
+  .textＷork a div h4 {font-size: 12px;}
+}

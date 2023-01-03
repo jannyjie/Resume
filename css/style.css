@@ -273,15 +273,19 @@ ul.listProgram {
 .list div{width: 50%;}
 .textＷork {
     display: flex;
+    flex-wrap: wrap;
 }
 .textＷork a {
-    width: 25%;
+    width: 22%;
     box-shadow: 0px 0px 4px rgb(255, 186, 182);
     border-radius: 3px;
-    margin: 25px 5px;
+    margin: 25px 5px 5px 5px;
     text-align: center;
     color: #000;
         text-decoration: none;
+        display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .textＷork a div h4{margin: 15px 0;}
 @media only screen and (max-width: 425px){
